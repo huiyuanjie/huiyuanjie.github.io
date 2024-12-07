@@ -1,0 +1,43 @@
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #558b2f;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content {
+    margin-top: 60px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-bar a {
+        margin-bottom: 10px;
+    }
+
+    .content {
+        margin-top: 80px; /* Adjust for increased top-bar height on small screens */
+    }
+} 
